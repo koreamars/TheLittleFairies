@@ -7,4 +7,9 @@ public class TestSC : MonoBehaviour {
     {
         Debug.Log(msg);
     }
+
+    void OnGUI()
+    {
+        GUI.Label(new Rect(10, 10, Screen.width - 10, Screen.height - 10), "test!!!");
+    }
 }

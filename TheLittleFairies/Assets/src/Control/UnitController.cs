@@ -6,7 +6,7 @@ using UnityEngine;
 using System.Collections;
 
 public class UnitController : MonoBehaviour {
-
+    /*
     private static UnitController instance;
     private static GameObject container;
     public static UnitController GetInstance()
@@ -27,7 +27,8 @@ public class UnitController : MonoBehaviour {
 #if UNITY_EDITOR
     void Start()
     {
-        if(isTest) {
+        Logger.GetInstance().Send("UnitController.Start");
+        if (isTest) {
             CreateUnit();
         }
     }
@@ -35,7 +36,7 @@ public class UnitController : MonoBehaviour {
 
     public void CreateUnit()
     {
-        Logger.Send("UnitController.CreateUnit");
+        Logger.GetInstance().Send("UnitController.CreateUnit");
         _testUnit = Instantiate(Resources.Load("Test/Charactor/CharactorUnit", typeof(GameObject))) as GameObject;
         _testUnit.AddComponent<NPCUnit>();
 
@@ -48,24 +49,24 @@ public class UnitController : MonoBehaviour {
         currentNPCUnit.Show();
 
     }
-
+    */
 
 #if UNITY_EDITOR
     void OnGUI()
     {
         if (GUI.Button(new Rect(20, 40, 80, 20), "<<"))
         {
-            _testUnit.GetComponent<NPCUnit>().SetAction(NPCActionType.LEFT_MOVE);
+           // _testUnit.GetComponent<NPCUnit>().SetAction(NPCActionType.LEFT_MOVE);
         }
 
         if (GUI.Button(new Rect(20, 70, 80, 20), ">>"))
         {
-            _testUnit.GetComponent<NPCUnit>().SetAction(NPCActionType.RIGHT_MOVE);
+           // _testUnit.GetComponent<NPCUnit>().SetAction(NPCActionType.RIGHT_MOVE);
         }
 
         if (GUI.Button(new Rect(20, 100, 80, 20), "idle"))
         {
-            _testUnit.GetComponent<NPCUnit>().SetAction(NPCActionType.IDLE);
+           // _testUnit.GetComponent<NPCUnit>().SetAction(NPCActionType.IDLE);
         }
     }
 

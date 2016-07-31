@@ -22,7 +22,7 @@ public class BaseUnit : BaseView {
 
     public virtual void SetAction(string actionType)
     {
-        Logger.Send("BaseUnit.SetAction actionType:" + actionType);
+        Logger.GetInstance().Send("BaseUnit.SetAction actionType:" + actionType);
 
         currentActionType = actionType;
         switch (actionType)
