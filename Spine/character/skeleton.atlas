@@ -1,0 +1,146 @@
+
+skeleton.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body/Default/Body-bottom
+  rotate: false
+  xy: 1341, 121
+  size: 200, 146
+  orig: 200, 146
+  offset: 0, 0
+  index: -1
+Body/Default/Body-top-female
+  rotate: false
+  xy: 1094, 211
+  size: 245, 296
+  orig: 245, 296
+  offset: 0, 0
+  index: -1
+Body/Default/Head
+  rotate: false
+  xy: 1341, 269
+  size: 238, 238
+  orig: 238, 238
+  offset: 0, 0
+  index: -1
+Body/Default/Left_Arm
+  rotate: false
+  xy: 1581, 314
+  size: 203, 193
+  orig: 203, 193
+  offset: 0, 0
+  index: -1
+Body/Default/Left_Foot
+  rotate: true
+  xy: 1581, 158
+  size: 154, 173
+  orig: 154, 173
+  offset: 0, 0
+  index: -1
+Body/Default/Left_Forearm
+  rotate: false
+  xy: 1543, 9
+  size: 166, 147
+  orig: 166, 147
+  offset: 0, 0
+  index: -1
+Body/Default/Left_Hand
+  rotate: true
+  xy: 552, 2
+  size: 135, 161
+  orig: 135, 161
+  offset: 0, 0
+  index: -1
+Body/Default/Left_Leg
+  rotate: true
+  xy: 1094, 49
+  size: 160, 209
+  orig: 160, 209
+  offset: 0, 0
+  index: -1
+Body/Default/Right_Arm
+  rotate: true
+  xy: 2, 11
+  size: 126, 191
+  orig: 126, 191
+  offset: 0, 0
+  index: -1
+Body/Default/Right_Foot
+  rotate: true
+  xy: 1786, 183
+  size: 154, 173
+  orig: 154, 173
+  offset: 0, 0
+  index: -1
+Body/Default/Right_Forearm
+  rotate: true
+  xy: 195, 11
+  size: 126, 191
+  orig: 126, 191
+  offset: 0, 0
+  index: -1
+Body/Default/Right_Hand
+  rotate: true
+  xy: 388, 8
+  size: 129, 162
+  orig: 129, 162
+  offset: 0, 0
+  index: -1
+Body/Default/Right_Leg
+  rotate: true
+  xy: 1786, 339
+  size: 168, 209
+  orig: 168, 209
+  offset: 0, 0
+  index: -1
+Head/Eye/Eye_f_001_l
+  rotate: false
+  xy: 715, 10
+  size: 69, 62
+  orig: 69, 62
+  offset: 0, 0
+  index: -1
+Head/Eye/Eye_f_001_r
+  rotate: false
+  xy: 715, 74
+  size: 89, 63
+  orig: 89, 63
+  offset: 0, 0
+  index: -1
+Head/EyeLine/EyeLine_001_l
+  rotate: true
+  xy: 1305, 60
+  size: 66, 34
+  orig: 66, 34
+  offset: 0, 0
+  index: -1
+Head/EyeLine/EyeLine_001_r
+  rotate: true
+  xy: 1305, 128
+  size: 81, 34
+  orig: 81, 34
+  offset: 0, 0
+  index: -1
+Head/Hair/Hair_f_001_b
+  rotate: true
+  xy: 2, 139
+  size: 368, 544
+  orig: 368, 544
+  offset: 0, 0
+  index: -1
+Head/Hair/Hair_f_001_f
+  rotate: true
+  xy: 548, 139
+  size: 368, 544
+  orig: 368, 544
+  offset: 0, 0
+  index: -1
+Head/Mouth/Mouth_001
+  rotate: true
+  xy: 1997, 455
+  size: 52, 32
+  orig: 52, 32
+  offset: 0, 0
+  index: -1
