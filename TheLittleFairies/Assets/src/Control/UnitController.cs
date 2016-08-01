@@ -6,7 +6,7 @@ using UnityEngine;
 using System.Collections;
 
 public class UnitController : MonoBehaviour {
-    /*
+    
     private static UnitController instance;
     private static GameObject container;
     public static UnitController GetInstance()
@@ -19,57 +19,56 @@ public class UnitController : MonoBehaviour {
         }
         return instance;
     }
+    
+        public bool isTest;
 
-    public bool isTest;
+        GameObject _testUnit;
 
-    GameObject _testUnit;
 
-#if UNITY_EDITOR
-    void Start()
-    {
-        Logger.GetInstance().Send("UnitController.Start");
-        if (isTest) {
-            CreateUnit();
+        void Start()
+        {
+            Logger.GetInstance().Send("UnitController.Start");
+            if (isTest) {
+                CreateUnit();
+            }
         }
-    }
-#endif
 
-    public void CreateUnit()
-    {
-        Logger.GetInstance().Send("UnitController.CreateUnit");
-        _testUnit = Instantiate(Resources.Load("Test/Charactor/CharactorUnit", typeof(GameObject))) as GameObject;
-        _testUnit.AddComponent<NPCUnit>();
+        public void CreateUnit()
+        {
+            Logger.GetInstance().Send("UnitController.CreateUnit");
+            _testUnit = Instantiate(Resources.Load("Test/Charactor/CharactorUnit", typeof(GameObject))) as GameObject;
+            _testUnit.AddComponent<NPCUnit>();
 
-        _testUnit.transform.localPosition = new Vector3(_testUnit.transform.localPosition.x, _testUnit.transform.localPosition.y - 260f, _testUnit.transform.localPosition.z);
+            _testUnit.transform.localPosition = new Vector3(_testUnit.transform.localPosition.x, _testUnit.transform.localPosition.y - 260f, _testUnit.transform.localPosition.z);
 
-        NPCUnitModel testModel = new NPCUnitModel();
-        testModel.moveSpeed = 2f;
-        NPCUnit currentNPCUnit = _testUnit.GetComponent<NPCUnit>();
-        currentNPCUnit.SetModel(testModel);
-        currentNPCUnit.Show();
+            NPCUnitModel testModel = new NPCUnitModel();
+            testModel.moveSpeed = 2f;
+            NPCUnit currentNPCUnit = _testUnit.GetComponent<NPCUnit>();
+            currentNPCUnit.SetModel(testModel);
+            currentNPCUnit.Show();
 
-    }
-    */
+        }
+        
 
-#if UNITY_EDITOR
     void OnGUI()
     {
-        if (GUI.Button(new Rect(20, 40, 80, 20), "<<"))
+       
+        if (GUI.Button(new Rect(20, 40, 80, 60), "<<"))
         {
-           // _testUnit.GetComponent<NPCUnit>().SetAction(NPCActionType.LEFT_MOVE);
+            _testUnit.GetComponent<NPCUnit>().SetAction(NPCActionType.LEFT_MOVE);
         }
 
-        if (GUI.Button(new Rect(20, 70, 80, 20), ">>"))
+        if (GUI.Button(new Rect(20, 120, 80, 60), ">>"))
         {
-           // _testUnit.GetComponent<NPCUnit>().SetAction(NPCActionType.RIGHT_MOVE);
+            _testUnit.GetComponent<NPCUnit>().SetAction(NPCActionType.RIGHT_MOVE);
         }
 
-        if (GUI.Button(new Rect(20, 100, 80, 20), "idle"))
+        if (GUI.Button(new Rect(20, 200, 80, 60), "idle"))
         {
-           // _testUnit.GetComponent<NPCUnit>().SetAction(NPCActionType.IDLE);
+            _testUnit.GetComponent<NPCUnit>().SetAction(NPCActionType.IDLE);
         }
+       
     }
 
-#endif
 
 }

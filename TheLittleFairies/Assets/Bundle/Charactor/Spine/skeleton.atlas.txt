@@ -1,146 +1,152 @@
 
 skeleton.png
-size: 2048,512
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body/Default/Body-top-female
+  rotate: true
+  xy: 2, 2
+  size: 306, 370
+  orig: 306, 370
+  offset: 0, 0
+  index: -1
+Body/Default/Head
+  rotate: false
+  xy: 374, 11
+  size: 297, 297
+  orig: 297, 297
+  offset: 0, 0
+  index: -1
+Body/Default/Left_Arm
+  rotate: true
+  xy: 673, 54
+  size: 254, 241
+  orig: 254, 241
+  offset: 0, 0
+  index: -1
+Head/Eye/Eye_f_001_l
+  rotate: true
+  xy: 926, 791
+  size: 86, 77
+  orig: 86, 77
+  offset: 0, 0
+  index: -1
+Head/Eye/Eye_f_001_r
+  rotate: true
+  xy: 926, 879
+  size: 111, 79
+  orig: 111, 79
+  offset: 0, 0
+  index: -1
+Head/EyeLine/EyeLine_001_l
+  rotate: true
+  xy: 926, 603
+  size: 83, 42
+  orig: 83, 42
+  offset: 0, 0
+  index: -1
+Head/EyeLine/EyeLine_001_r
+  rotate: true
+  xy: 926, 688
+  size: 101, 42
+  orig: 101, 42
+  offset: 0, 0
+  index: -1
+Head/Hair/Hair_f_001_b
+  rotate: false
+  xy: 2, 310
+  size: 460, 680
+  orig: 460, 680
+  offset: 0, 0
+  index: -1
+Head/Hair/Hair_f_001_f
+  rotate: false
+  xy: 464, 310
+  size: 460, 680
+  orig: 460, 680
+  offset: 0, 0
+  index: -1
+Head/Mouth/Mouth_001
+  rotate: false
+  xy: 673, 12
+  size: 65, 40
+  orig: 65, 40
+  offset: 0, 0
+  index: -1
+
+skeleton2.png
+size: 1024,512
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
 Body/Default/Body-bottom
   rotate: false
-  xy: 1341, 121
-  size: 200, 146
-  orig: 200, 146
-  offset: 0, 0
-  index: -1
-Body/Default/Body-top-female
-  rotate: false
-  xy: 1094, 211
-  size: 245, 296
-  orig: 245, 296
-  offset: 0, 0
-  index: -1
-Body/Default/Head
-  rotate: false
-  xy: 1341, 269
-  size: 238, 238
-  orig: 238, 238
-  offset: 0, 0
-  index: -1
-Body/Default/Left_Arm
-  rotate: false
-  xy: 1581, 314
-  size: 203, 193
-  orig: 203, 193
+  xy: 2, 20
+  size: 250, 183
+  orig: 250, 183
   offset: 0, 0
   index: -1
 Body/Default/Left_Foot
-  rotate: true
-  xy: 1581, 158
-  size: 154, 173
-  orig: 154, 173
+  rotate: false
+  xy: 416, 250
+  size: 192, 216
+  orig: 192, 216
   offset: 0, 0
   index: -1
 Body/Default/Left_Forearm
   rotate: false
-  xy: 1543, 9
-  size: 166, 147
-  orig: 166, 147
+  xy: 804, 282
+  size: 207, 184
+  orig: 207, 184
   offset: 0, 0
   index: -1
 Body/Default/Left_Hand
-  rotate: true
-  xy: 552, 2
-  size: 135, 161
-  orig: 135, 161
+  rotate: false
+  xy: 254, 2
+  size: 169, 201
+  orig: 169, 201
   offset: 0, 0
   index: -1
 Body/Default/Left_Leg
-  rotate: true
-  xy: 1094, 49
-  size: 160, 209
-  orig: 160, 209
+  rotate: false
+  xy: 214, 205
+  size: 200, 261
+  orig: 200, 261
   offset: 0, 0
   index: -1
 Body/Default/Right_Arm
-  rotate: true
-  xy: 2, 11
-  size: 126, 191
-  orig: 126, 191
+  rotate: false
+  xy: 425, 9
+  size: 158, 239
+  orig: 158, 239
   offset: 0, 0
   index: -1
 Body/Default/Right_Foot
-  rotate: true
-  xy: 1786, 183
-  size: 154, 173
-  orig: 154, 173
+  rotate: false
+  xy: 610, 250
+  size: 192, 216
+  orig: 192, 216
   offset: 0, 0
   index: -1
 Body/Default/Right_Forearm
-  rotate: true
-  xy: 195, 11
-  size: 126, 191
-  orig: 126, 191
+  rotate: false
+  xy: 585, 9
+  size: 158, 239
+  orig: 158, 239
   offset: 0, 0
   index: -1
 Body/Default/Right_Hand
-  rotate: true
-  xy: 388, 8
-  size: 129, 162
-  orig: 129, 162
+  rotate: false
+  xy: 745, 46
+  size: 161, 202
+  orig: 161, 202
   offset: 0, 0
   index: -1
 Body/Default/Right_Leg
-  rotate: true
-  xy: 1786, 339
-  size: 168, 209
-  orig: 168, 209
-  offset: 0, 0
-  index: -1
-Head/Eye/Eye_f_001_l
   rotate: false
-  xy: 715, 10
-  size: 69, 62
-  orig: 69, 62
-  offset: 0, 0
-  index: -1
-Head/Eye/Eye_f_001_r
-  rotate: false
-  xy: 715, 74
-  size: 89, 63
-  orig: 89, 63
-  offset: 0, 0
-  index: -1
-Head/EyeLine/EyeLine_001_l
-  rotate: true
-  xy: 1305, 60
-  size: 66, 34
-  orig: 66, 34
-  offset: 0, 0
-  index: -1
-Head/EyeLine/EyeLine_001_r
-  rotate: true
-  xy: 1305, 128
-  size: 81, 34
-  orig: 81, 34
-  offset: 0, 0
-  index: -1
-Head/Hair/Hair_f_001_b
-  rotate: true
-  xy: 2, 139
-  size: 368, 544
-  orig: 368, 544
-  offset: 0, 0
-  index: -1
-Head/Hair/Hair_f_001_f
-  rotate: true
-  xy: 548, 139
-  size: 368, 544
-  orig: 368, 544
-  offset: 0, 0
-  index: -1
-Head/Mouth/Mouth_001
-  rotate: true
-  xy: 1997, 455
-  size: 52, 32
-  orig: 52, 32
+  xy: 2, 205
+  size: 210, 261
+  orig: 210, 261
   offset: 0, 0
   index: -1

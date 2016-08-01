@@ -46,7 +46,7 @@ public class Logger : MonoBehaviour {
             {
                 totalMsg += thisMsg + "\n";
             }
-            GUI.Label(new Rect(10, 10, Screen.width - 10, Screen.height - 10), totalMsg);
+            GUI.Label(new Rect(10, 50, Screen.width - 10, Screen.height - 10), totalMsg);
         }
     }
 
