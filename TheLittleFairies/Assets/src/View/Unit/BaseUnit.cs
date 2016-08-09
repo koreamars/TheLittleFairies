@@ -61,7 +61,7 @@ public class BaseUnit : BaseView {
 
         UnityEngine.Vector3 cameraVector3 = this.transform.localPosition;
         cameraVector3.z = UnityEngine.Camera.main.transform.localPosition.z;
-        cameraVector3.y = this.transform.localPosition.y + 60;
+        cameraVector3.y = this.transform.localPosition.y + 180;
         UnityEngine.Camera.main.transform.localPosition = cameraVector3;
     }
 
