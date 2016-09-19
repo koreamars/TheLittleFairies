@@ -22,12 +22,12 @@ public class UnitController : MonoBehaviour {
     
         public bool isTest;
 
-        GameObject _testUnit;
+        private GameObject _testUnit;
 
 
         void Start()
         {
-            Logger.GetInstance().Send("UnitController.Start");
+            Logger.Send("UnitController.Start");
             if (isTest) {
                 CreateUnit();
             }
@@ -35,8 +35,8 @@ public class UnitController : MonoBehaviour {
 
         public void CreateUnit()
         {
-            Logger.GetInstance().Send("UnitController.CreateUnit");
-            _testUnit = Instantiate(Resources.Load("Test/Charactor/CharactorUnit", typeof(GameObject))) as GameObject;
+            Logger.Send("UnitController.CreateUnit");
+            _testUnit = Instantiate(Resources.Load("Charactor/CharactorUnit", typeof(GameObject))) as GameObject;
             _testUnit.AddComponent<NPCUnit>();
 
             _testUnit.transform.localPosition = new Vector3(_testUnit.transform.localPosition.x, _testUnit.transform.localPosition.y - 260f, _testUnit.transform.localPosition.z);
@@ -52,6 +52,7 @@ public class UnitController : MonoBehaviour {
 
     void OnGUI()
     {
+        if (!isTest) return;
        
         if (GUI.Button(new Rect(20, 40, 80, 60), "<<"))
         {

@@ -6,12 +6,12 @@ public class TestSC : MonoBehaviour {
     void Start()
     {
         print("??");
-        Logger.GetInstance().Send("test!!!!!!!");
+        Logger.Send("test!!!!!!!");
     }
 
     public void SetTestMsg(string msg)
     {
-        Logger.GetInstance().Send(msg);
+        Logger.Send(msg);
     }
 
     void OnGUI()

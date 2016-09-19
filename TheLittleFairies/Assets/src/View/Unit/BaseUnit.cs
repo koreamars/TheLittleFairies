@@ -22,7 +22,7 @@ public class BaseUnit : BaseView {
 
     public virtual void SetAction(string actionType)
     {
-        Logger.GetInstance().Send("BaseUnit.SetAction actionType:" + actionType);
+        Logger.Send("BaseUnit.SetAction actionType:" + actionType);
 
         currentActionType = actionType;
         switch (actionType)
@@ -32,11 +32,11 @@ public class BaseUnit : BaseView {
                 break;
             case BaseActionType.LEFT_MOVE:
                if(this.transform.localScale.x < 0)  this.transform.localScale = new UnityEngine.Vector3(this.transform.localScale.x * -1, this.transform.localScale.y, this.transform.localScale.z);
-                skeletonAnimation.state.SetAnimation(0, "run", true);
+                skeletonAnimation.state.SetAnimation(0, "walk", true);
                 break;
             case BaseActionType.RIGHT_MOVE:
                 if (this.transform.localScale.x > 0) this.transform.localScale = new UnityEngine.Vector3(this.transform.localScale.x * -1, this.transform.localScale.y, this.transform.localScale.z);
-                skeletonAnimation.state.SetAnimation(0, "run", true);
+                skeletonAnimation.state.SetAnimation(0, "walk", true);
                 break;
         }
     }
@@ -45,6 +45,7 @@ public class BaseUnit : BaseView {
     {
         BaseUnitModel currentModel = baseModel as BaseUnitModel;
         if (currentModel == null) return;
+        if (currentActionType == BaseActionType.IDLE) return;
 
         UnityEngine.Vector3 movePos = this.transform.localPosition;
 
@@ -58,11 +59,12 @@ public class BaseUnit : BaseView {
         }
 
         this.transform.localPosition = movePos;
-
+        /*
         UnityEngine.Vector3 cameraVector3 = this.transform.localPosition;
         cameraVector3.z = UnityEngine.Camera.main.transform.localPosition.z;
         cameraVector3.y = this.transform.localPosition.y + 180;
         UnityEngine.Camera.main.transform.localPosition = cameraVector3;
+        */
     }
 
     void Update()

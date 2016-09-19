@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class UIController : MonoBehaviour {
@@ -18,12 +19,20 @@ public class UIController : MonoBehaviour {
 
     public bool isTest;
 
-#if UNITY_EDITOR
+    private GameObject _mainUIObj;
+    private MainGameUI _mainGameUI;
+    
     void Start()
     {
         if(isTest) {
-
+            Init();
         }
     }
-#endif
+
+    public void Init()
+    {
+        _mainUIObj = GameObject.Find("MainGameUI");
+        _mainGameUI = _mainUIObj.GetComponent<MainGameUI>();
+
+    }
 }
